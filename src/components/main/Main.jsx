@@ -1,6 +1,8 @@
 import React from 'react';
 import {Card, CardHeader, CardContent, Typography, Grid, Divider} from '@material-ui/core';
 import useStyles from './styles';
+import Form from './form/Form';
+import List from './list/List';
 
 const Main = () => {
     const classes = useStyles();
@@ -14,12 +16,12 @@ const Main = () => {
                     demo sentence from speechly
                 </Typography>
                 <Divider/>
-                {/* form component */}
+                <Form />
             </CardContent>
             <CardContent className={classes.CardContent}>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
-                        {/* <List /> */}
+                        <List />
                     </Grid>
                 </Grid>
             </CardContent>
