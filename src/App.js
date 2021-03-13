@@ -4,7 +4,6 @@ import Details from './components/details/Details';
 import {Grid} from '@material-ui/core';
 import useStyles from './styles';
 
-// ------------ video @ 26:11 ----------
 
 const App = () => {
     const classes = useStyles();

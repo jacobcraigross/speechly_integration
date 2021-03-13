@@ -3,15 +3,20 @@ import {List as MUIList, ListItem,
                 ListItemAvatar, ListItemText, 
                 Avatar, ListItemSecondaryAction, 
                 IconButton, Slide } from '@material-ui/core'; 
+
+          
 import {Delete, MoneyOff} from '@material-ui/icons';
 import useStyles from './styles';
 
-// ---------- video @ 42:26 ----------
 
 const List = () => {
     const classes = useStyles();
     const transactions = [
-        { id: 1, type: "Income", category: "Salary", amount: 700, date: new Date() }
+        { id: 1, type: "Income", category: "Salary", amount: 725, date: "wed dec 16th" },
+        { id: 2, type: "Expense", category: "Kids", amount: 200, date: "fri dec 18th" },
+        { id: 3, type: "Income", category: "Side cash", amount: 3322, date: "sat dec 19th" },
+        { id: 4, type: "Expense", category: "Food", amount: 48, date: "sun dec 20th" },
+        { id: 5, type: "Income", category: "Bonus", amount: 1122, date: "mon dec 21th" }
     ];
 
     return (
